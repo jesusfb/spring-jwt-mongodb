@@ -15,11 +15,7 @@ import io.swagger.v3.oas.annotations.security.SecurityScheme;
 import io.swagger.v3.oas.annotations.servers.Server;
 
 @SpringBootApplication
-@EnableMongoRepositories
-@OpenAPIDefinition(
-	info = @Info(title = "Spring Boot JWT Authentication Server API", version="1.0")
-	
-})
+
 @SecurityScheme(
 	name = "bearerAuthToken",
 	description = "JWT Authentication Token",
