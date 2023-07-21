@@ -19,11 +19,11 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 
 @RestController
-@RequestMapping("/api/products")
-public class ProductsController {
+@RequestMapping("/api/product")
+public class ProductController {
     
 	@Autowired
-    UserService userService;
+    ProductService productService;
 
 	@Operation(summary = "Get User Profile")
     @GetMapping("/profile")
